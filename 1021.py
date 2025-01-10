@@ -9,20 +9,20 @@ for i in range (n):
     d.append(i+1)
 
 index_list=list(map(int,input().split()))
-count=0
+count=0 
 for i in index_list:
     while True:
         if d[0]==i:
             d.popleft()
             break
         else:
-            if d.index(i)<len(d)/2:
-                while d[0] != i:
-                    d.append(d.popleft())
+            if d.index(i)<len(d)/2: #덱에서 절반 중 왼쪽이면
+                while d[0] != i: #첫 인덱스가 찾는 수 일 때 까지
+                    d.append(d.popleft()) #덱 왼쪽에서 빼서 오른쪽 삽입
                     count += 1
             else:
                 while d[0] != i:
-                    d.appendleft(d.pop())
+                    d.appendleft(d.pop()) #덱 오른쪽에서 빼서 왼쪽 삽입
                     count+=1
 print(count)
 
