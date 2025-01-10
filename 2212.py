@@ -25,3 +25,4 @@ else:
         distance_list[i]=0
     #print(f"기지국 거리 합 리스트 : {distance_list}")
     print(sum(distance_list))
+    
