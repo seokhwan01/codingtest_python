@@ -10,7 +10,7 @@ sensor_list.sort()
 #1 3 6 6 7 9의 차이 리스트 : [2,3,0,1,2] -> 정렬: [3,2,2,1,0] 
 #최대 값 부터 k-1개 0으로 변경 [0,2,2,1,0] 
 
-if station_num>=sensor_num: #기지국 갯수가 센서 갯수보다 많으면 인덱스에서 에러 발생
+if station_num>=sensor_num: #기지국 갯수가 센서 갯수보다 많으면 오류
     print(0)
 
 else:
