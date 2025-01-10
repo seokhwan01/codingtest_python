@@ -1,4 +1,4 @@
-num,total = map(int,input().split()) #동전 종류 갯수, 총 가격
+num,total = map(int,input().split()) #동전 종류 갯수 , 총 가격
 coin_list=[]
 for i in range (num):
     coin_list.append(int(input("")))
