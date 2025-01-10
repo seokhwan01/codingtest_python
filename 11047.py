@@ -11,7 +11,7 @@ for one_coin in coin_list:
     
     if one_coin <= total:
         count = total // one_coin
-        print(f"코인 : {one_coin} , count : {count}")
+        #print(f"코인 : {one_coin} , count : {count}")
         total = total%one_coin
         total_count += count
     if total == 0:
