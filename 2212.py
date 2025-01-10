@@ -3,7 +3,7 @@ station_num = int(input())
 sensor_list = list(map(int,input().split()))
 sensor_list.sort()
 #print(f"정렬된 센서 리스트 : {sensor_list}")
-##해결 방법
+##해결 방법##
 ## 센서를 정렬 시키고 옆 좌표와 차이를 distance_list에 저장
 #거리 차이가 가장 큰 차이 station_num-1개 만큼 삭제
 #나머지 거리 차이를 더 해줌
