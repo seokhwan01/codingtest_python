@@ -5,6 +5,9 @@ def fac(i):
         return fac(i-1)*i
     
 num=int(input())
+if num==0:
+    print("0")
+    exit()
 string=str(fac(num))[::-1]#문자열 뒤집기
 
 count = 0
