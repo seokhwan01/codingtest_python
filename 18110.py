@@ -11,12 +11,13 @@ n = int(input())
 if n==0:
     print(0)
     exit()
-score=deque()
+score=[]
 adjust_factor=round_fun((n*15)/100)
 #print(adjust_factor)
 for i in range(n):
     score.append(int(sys.stdin.readline()))
 score.sort()
+score=deque(score)
 for i in range(adjust_factor):
     score.pop()
     score.popleft()
